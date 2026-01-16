@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace EarlGrey.API.Controllers {
     [ApiController]
-    [Route("weather")]
+    [Route("api/weather")]
     public class WeatherController : ControllerBase {
 
         private OpenMeteoService openMeteoService;

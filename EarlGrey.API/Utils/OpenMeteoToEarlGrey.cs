@@ -1,6 +1,8 @@
 ﻿using EarlGrey.Common.Weather;
 using OpenMeteo.Common;
 
+using static EarlGrey.API.Utils.Utils;
+
 namespace EarlGrey.API.Utils {
     public static class OpenMeteoToEarlGrey {
 
@@ -83,13 +85,13 @@ namespace EarlGrey.API.Utils {
 
             return new() {
                 FetchedOn = DateTime.Now,
-                LastUpdate = current.Time,
-                CurrentConditions = {
+                LastUpdate = AsUtc(current.Time),
+                CurrentConditions = new(){
                     FeelsLike=current.ApparentTemperature,
                     Humidity=current.RelativeHumidity2m,
                     Pressure=current.SurfacePressure,
                     Temperature=current.Temperature2m,
-                    Timestamp=current.Time,
+                    Timestamp=AsUtc(current.Time),
                     Wind=new(){
                         Direction=(current.WindDirection10m + 180) % 360,
                         GustSpeed= current.WindGusts10m,
@@ -100,17 +102,18 @@ namespace EarlGrey.API.Utils {
                 },
                 Forecast = [.. new List<int>([0, 1, 2]).Select(index => new Forecast() {
                     Name= index== 0
-                        ? current.IsDay == 1
-                            ? "Today"
-                            : "Tonight"
+                        ? current.IsDay == 0 && DateTime.Now > AsUtc(daily.Sunset[0])
+                            ? "Tonight"
+                            : "Today"
                         : index==1
                             ? "Tomorrow"
                             : daily.Time[index].DayOfWeek.ToString(),
 
-                    Sunrise = daily.Sunrise[index],
-                    Sunset = daily.Sunset[index],
+                    Sunrise = AsUtc(daily.Sunrise[index]),
+                    Sunset = AsUtc(daily.Sunset[index]),
 
                     ChanceOfRain=daily.PrecipitationProbabilityMax[index],
+                    UvIndex = daily.UvIndex[index],
 
                     Description= dailyMappings[index].Description,
                     Icon= index==0 && current.IsDay==0

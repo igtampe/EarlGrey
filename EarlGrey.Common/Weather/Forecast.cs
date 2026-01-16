@@ -10,6 +10,7 @@
         public double ChanceOfRain { get; set; }
         public DateTime Sunrise { get; set; }
         public DateTime Sunset { get; set; }
+        public double UvIndex { get; set; }
 
         /// <summary>Short text description</summary>
         public string Description { get; set; }

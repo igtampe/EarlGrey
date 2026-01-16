@@ -1,5 +1,9 @@
 <Solution>
   <Project Path="EarlGrey.API/EarlGrey.API.csproj" />
   <Project Path="EarlGrey.Common/EarlGrey.Common.csproj" />
+  <Project Path="earlGrey.web/earlgrey.web.esproj">
+    <Build />
+    <Deploy />
+  </Project>
   <Project Path="OpenMeteo.Common/OpenMeteo.Common.csproj" />
 </Solution>

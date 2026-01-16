@@ -1,0 +1,90 @@
+{
+    "currentConditions": {
+        "temperature": 10.8,
+        "feelsLike": 7.3,
+        "wind": {
+            "speed": 8.7,
+            "gustSpeed": 14,
+            "direction": 24,
+            "directionString": "NNE"
+        },
+        "pressure": 989.5,
+        "humidity": 45,
+        "timestamp": "2026-01-14T19:15:00Z",
+        "description": "Overcast",
+        "icon": "overcast-day"
+    },
+    "forecast": [
+        {
+            "name": "Today",
+            "temperature": {
+                "high": 11.1,
+                "low": 4.4
+            },
+            "feelsLikeTemperature": {
+                "high": 8,
+                "low": 0.8
+            },
+            "wind": {
+                "minSpeed": 4.7,
+                "maxSpeed": 13.3,
+                "direction": 16,
+                "directionString": "NNE"
+            },
+            "chanceOfRain": 11,
+            "sunrise": "2026-01-14T12:21:00Z",
+            "sunset": "2026-01-14T22:00:00Z",
+            "uvIndex": 2.55,
+            "description": "Overcast",
+            "icon": "overcast-day"
+        },
+        {
+            "name": "Tomorrow",
+            "temperature": {
+                "high": 7.1,
+                "low": -5.5
+            },
+            "feelsLikeTemperature": {
+                "high": 2.9,
+                "low": -12.7
+            },
+            "wind": {
+                "minSpeed": 9.3,
+                "maxSpeed": 30.8,
+                "direction": 70,
+                "directionString": "ENE"
+            },
+            "chanceOfRain": 22,
+            "sunrise": "2026-01-15T12:21:00Z",
+            "sunset": "2026-01-15T22:01:00Z",
+            "uvIndex": 2.7,
+            "description": "Drizzle",
+            "icon": "partly-cloudy-day-drizzle"
+        },
+        {
+            "name": "Friday",
+            "temperature": {
+                "high": 0.8,
+                "low": -9.6
+            },
+            "feelsLikeTemperature": {
+                "high": -4.7,
+                "low": -15.7
+            },
+            "wind": {
+                "minSpeed": 11.5,
+                "maxSpeed": 23.8,
+                "direction": 74,
+                "directionString": "ENE"
+            },
+            "chanceOfRain": 2,
+            "sunrise": "2026-01-16T12:20:00Z",
+            "sunset": "2026-01-16T22:02:00Z",
+            "uvIndex": 2.7,
+            "description": "Overcast",
+            "icon": "overcast-day"
+        }
+    ],
+    "lastUpdate": "2026-01-14T19:15:00Z",
+    "fetchedOn": "2026-01-14T14:22:31.8287846-05:00"
+}

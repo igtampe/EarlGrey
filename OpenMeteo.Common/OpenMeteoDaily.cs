@@ -40,6 +40,9 @@ namespace OpenMeteo.Common {
         public List<double> ShowerSum { get; set; } = [];
         [JsonPropertyName("snowfall_sum")]
         public List<double> SnowfallSum { get; set; } = [];
+
+        [JsonPropertyName("uv_index_max")]
+        public List<double> UvIndex { get; set; } = [];
     }
 
 }
