@@ -1,7 +1,7 @@
+import { ArrowUpward } from "@mui/icons-material";
 import { useSettings } from "../../hooks/useSettings";
 import useWeather from "../../hooks/useWeather";
 import { displayPressure, displaySpeed, displayTemperature } from "../../utils/unitUtils";
-import AirIcon from '@mui/icons-material/Air';
 import OpacityIcon from '@mui/icons-material/Opacity';
 import Speed from '@mui/icons-material/Speed';
 
@@ -28,7 +28,7 @@ export default function CurrentConditions() {
         <div style={{ display: 'flex', alignItems: 'center', gap: "25px" }}>
             <div style={{ display: 'flex', alignItems: 'center' }}>
                 <div style={{ textAlign: 'center', marginRight: "10px" }}>
-                    <AirIcon />
+                    <ArrowUpward style={{ transform: `rotate(${currentConditions?.wind?.direction}deg)`, scale: "1.2" }} />
                     <div style={{ fontSize: ".7em" }}>{currentConditions?.wind?.directionString}</div>
                 </div>
                 <div>
@@ -40,6 +40,8 @@ export default function CurrentConditions() {
                     </div>
                 </div>
             </div>
+
+            <hr style={{ height: "80px" }} />
 
             <div style={{ fontSize: ".8em", display: 'flex', flexDirection: 'column', gap: "5px" }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: "5px" }}>
