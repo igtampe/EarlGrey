@@ -2,7 +2,11 @@ import { useMemo } from "react";
 import useCurrentTime from "../../hooks/useCurrentTime";
 import useWeather from "../../hooks/useWeather";
 
-export default function Clock() {
+export default function Clock({ width, height, suppressDate }: {
+    width?: string,
+    height?: string
+    suppressDate?: boolean
+}) {
 
     const now = useCurrentTime();
     const { data: weather } = useWeather();
@@ -52,7 +56,10 @@ export default function Clock() {
 
     return <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: "100%" }}>
 
-        <div style={{ width: "50vh", height: "50vh", border: "2px solid white", borderRadius: "10px", marginBottom: "10px", position: 'relative' }}>
+        <div style={{
+            width: width ?? "50vh", height: height ?? "50vh",
+            border: "2px solid white", borderRadius: "10px", marginBottom: "10px", position: 'relative'
+        }}>
 
             {/* 12 O-Clock */}
             {hourTicks.map(a => {
@@ -103,9 +110,9 @@ export default function Clock() {
 
         </div>
 
-        <div>
+        {!suppressDate && <div>
             {today}
-        </div>
+        </div>}
 
         <div style={{ display: 'flex', gap: "5px" }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: "5px" }}>
