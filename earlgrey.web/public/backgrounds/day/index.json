@@ -1,0 +1,656 @@
+[
+    {
+        "file": "20160610_102721.jpg",
+        "name": "A storm approaching",
+        "description": "A mountain in Washington State as a storm approaches",
+        "date": "6/10/2016"
+    },
+    {
+        "file": "20191128_074323.jpg",
+        "name": "The Northwest",
+        "description": "The northwest corner of Puerto Rico, as seen from a Cape Air Cessna en route to San Juan",
+        "date": "11/28/2019"
+    },
+    {
+        "file": "20200120_121109.jpg",
+        "name": "Tropical Waves",
+        "description": "A choppy midday ocean as seen from an overlook close to the Puerto Rican capitol building in Old San Juan",
+        "date": "1/20/2020"
+    },
+    {
+        "file": "20200127_101552.jpg",
+        "name": "La Ventana",
+        "description": "La Ventana (The Window) is an overlook I named near MUSA in the University of Puerto Rico, Mayaguez Campus. Through the trees and beyond PR-2, lies the ocean.",
+        "date": "1/27/2020"
+    },
+    {
+        "file": "20200304_142736.jpg",
+        "name": "The view from Monzon",
+        "description": "The view from the (at the time) abandoned math department building of Mono in the University of Puerto Rico, Mayaguez Campus. As of writing, renovations have finally begun to restore this building",
+        "date": "3/4/2020"
+    },
+    {
+        "file": "20201030_095656.jpg",
+        "name": "The sands of Condado",
+        "description": "A morning shot of the beaches of Condado in San Juan, PR",
+        "date": "1/6/2020"
+    },
+    {
+        "file": "20201226_134053.jpg",
+        "name": "We're on our way",
+        "description": "My former '89 Volvo 740 Turbo on the overlook in Guajataca, near Isabela, PR",
+        "date": "12/26/2020"
+    },
+    {
+        "file": "20210526_123238.jpg",
+        "name": "Miami Suburbia",
+        "description": "The large expanse of suburban Miami FL, taken on approach to Miami Dade Intl.",
+        "date": "5/26/2021"
+    },
+    {
+        "file": "20210531_131131.jpg",
+        "name": "Rolling Austin Hills",
+        "description": "Amidst the flatness of Texas, Austin stands boldly with lush green rolling hills",
+        "date": "5/31/2021"
+    },
+    {
+        "file": "20210604_133303.jpg",
+        "name": "Tower of the Americas",
+        "description": "A view towards I-37 on The Tower of the Americas in San Antonio, TX",
+        "date": "6/4/2021"
+    },
+    {
+        "file": "20210605_101138.jpg",
+        "name": "Power lines in TX",
+        "description": "A powerline in rural Texas",
+        "date": "6/5/2021"
+    },
+    {
+        "file": "20210704_134834.jpg",
+        "name": "Brick Buildings in Philly",
+        "description": "A row of brick buildings in Philadelphia, PA",
+        "date": "7/4/2021"
+    },
+    {
+        "file": "20210830_080036.jpg",
+        "name": "On the Rails",
+        "description": "The rails of the DC Metro System in Rockville, MD",
+        "date": "8/30/2021"
+    },
+    {
+        "file": "20210830_122308.jpg",
+        "name": "Now Boarding at...",
+        "description": "Terminal A, the international terminal, at Washington Dulles International Airport, waiting for flights late into the pandemic",
+        "date": "8/30/2021"
+    },
+    {
+        "file": "20211121_082015-EFFECTS.jpg",
+        "name": "Fall Memories",
+        "description": "Early morning fall leaves in Rockville, MD",
+        "date": "11/21/2021"
+    },
+    {
+        "file": "20211128_114608.jpg",
+        "name": "Old San Juan",
+        "description": "The island of Old San Juan as seen on approach into Luis Munoz Marin Intl. Airport in San Juan, PR",
+        "date": "11/28/2021"
+    },
+    {
+        "file": "20211202_140548.jpg",
+        "name": "Popular Center",
+        "description": "The view from Tinto y Blanco, a restaurant at Popular Center in Hato Rey, San Juan, PR",
+        "date": "12/2/2020"
+    },
+    {
+        "file": "20211202_144244.jpg",
+        "name": "Hato Rey Station",
+        "description": "Midday at the Tren Urbano's Hato Rey Station",
+        "date": "12/2/2021"
+    },
+    {
+        "file": "20211216_124022.jpg",
+        "name": "Discovery",
+        "description": "My boyfriend Joseph looking up at the satellites and planes in the Smithsonian Air and Space Museum in Washington DC",
+        "date": "12/16/2021"
+    },
+    {
+        "file": "20211219_101557.jpg",
+        "name": "Church Bells Ringing",
+        "description": "St. Patrick's Cathedral in Manhattan, NYC, just before sunday noon mass",
+        "date": "12/19/2021"
+    },
+    {
+        "file": "20220208_181240.jpg",
+        "name": "Unending Tunnel",
+        "description": "A pedestrian walkway above Centro Medico's avenue in San Juan, PR",
+        "date": "2/8/2022"
+    },
+    {
+        "file": "20220523_082627.jpg",
+        "name": "Departing on Track 5",
+        "description": "Washington Union Station's main hall in Washington DC",
+        "date": "5/23/2022"
+    },
+    {
+        "file": "20220524_112755.jpg",
+        "name": "Shush!",
+        "description": "A shot of the public library at the center of Wilmington, DE",
+        "date": "5/24/2022"
+    },
+    {
+        "file": "20220623_123633.jpg",
+        "name": "The Pennsylvania Grand Canyon",
+        "description": "Near to Wellsboro, PA, amongst flat fields of farm and grass, suddenly lies this long, wide valley locals call the \"Pennsylvania Grand Canyon\"",
+        "date": "6/23/2022"
+    },
+    {
+        "file": "20220630_130742.jpg",
+        "name": "Theodore Roosevelt's wave",
+        "description": "A shot of a plane climbing out of Washing Reagan National Airport taken from Theodore Roosevelt Island in Washington DC",
+        "date": "6/30/2022"
+    },
+    {
+        "file": "20220630_151848.jpg",
+        "name": "Judging",
+        "description": "A shot of the Supreme Court of the United States in Washington DC",
+        "date": "6/30/2022"
+    },
+    {
+        "file": "20220810_124924.jpg",
+        "name": "Manhattan Island",
+        "description": "A midday shot of Manhattan Island from Exchange Place in Jersey City",
+        "date": "8/10/2022"
+    },
+    {
+        "file": "DSCN0833.JPG",
+        "name": "Colorado Rockies",
+        "description": "The mountains of Colorado, almost 12k ft in the air",
+        "date": "6/9/2015"
+    },
+    {
+        "file": "DSCN0837.JPG",
+        "name": "Snowtop Mountains",
+        "description": "The mountains of Colorado, almost 12k ft in the air, and the road that takes your there",
+        "date": "6/9/2015"
+    },
+    {
+        "file": "DSC_0141-01.jpeg",
+        "name": "A clearing in West Virginia",
+        "description": "An early evening shot of a clearing in the woods of West Virginia",
+        "date": "6/24/2018"
+    },
+    {
+        "file": "DSC_0146.JPG",
+        "name": "Ozorno in the Afternoon",
+        "description": "Ozorno, a dormant volcano in the south of Chile, near Puerto Varas",
+        "date": "6/2/2019"
+    },
+    {
+        "file": "DSC_0307.JPG",
+        "name": "Now Boarding",
+        "description": "Terminal D of Luis Munoz Marin Intl. Airport before its renovations, in San Juan, PR",
+        "date": "11/14/2019"
+    },
+    {
+        "file": "DSC_0361.JPG",
+        "name": "Power Lines",
+        "description": "A powerline in the marshlands of Miami",
+        "date": "11/17/2019"
+    },
+    {
+        "file": "FarmUS15.jpg",
+        "name": "A Farm near US-15",
+        "description": "A small farm near the rolling hills of the appalachians, and US Route 15, north of Frederick, MD",
+        "date": "8/6/2018"
+    },
+    {
+        "file": "20220827_172949.jpg",
+        "name": "Northeast Regional on the Susquehana",
+        "description": "The Northeast Regional Amtrak service running over the Susquehana river",
+        "date": "8/27/2022"
+    },
+    {
+        "file": "20221111_120913.jpg",
+        "name": "Yellow in the Fog",
+        "description": "A single yellow tree standing boldly among the fog near Hawk Watch at Brandywine Creek State Park in DE",
+        "date": "11/11/2022"
+    },
+    {
+        "file": "20221112_130015.jpg",
+        "name": "Wilmington in the Distance",
+        "description": "A view of Wilmington DE shot near the DuPont Environmental Education Center",
+        "date": "11/12/2022"
+    },
+    {
+        "file": "20221125_113903.jpg",
+        "name": "Mountaintop at Aguada",
+        "description": "The view towards the ocean from a mountaintop home in Aguada",
+        "date": "11/25/2022"
+    },
+    {
+        "file": "DSC00064.JPG",
+        "name": "Brandywine Park",
+        "description": "The view of Brandywine Creek at Brandywine Park in Wilmington DE",
+        "date": "12/10/2022"
+    },
+    {
+        "file": "DSC00071.JPG",
+        "name": "Brandywine Park Closeup",
+        "description": "A closeup view of the creek at Brandywine Park in Wilmington DE",
+        "date": "12/10/2022"
+    },
+    {
+        "file": "DSC00095.JPG",
+        "name": "I95 Brandywine Bridge",
+        "description": "An upwards shot of the I95 bridge over Brandywine Creek",
+        "date": "12/10/2022"
+    },
+    {
+        "file": "DSC00140.JPG",
+        "name": "Arriving at Dulles",
+        "description": "A 70000 series WMATA Train pulling into Dulles International Airport",
+        "date": "12/17/2018"
+    },
+    {
+        "file": "DSC00162.JPG",
+        "name": "Curving into Dulles",
+        "description": "An older 2000/3000 series WMATA Train pulling into Dulles International Airport",
+        "date": "12/17/2022"
+    },
+    {
+        "file": "DSC00253.JPG",
+        "name": "Looking out into the Snow",
+        "description": "My boyfriend Joseph looking out into the light snow falling in Pensylvania",
+        "date": "12/23/2022"
+    },
+    {
+        "file": "DSC00290.JPG",
+        "name": "Lancaster Farms",
+        "description": "Farms near Lancaster PA braving the winter storm winds",
+        "date": "12/23/2022"
+    },
+    {
+        "file": "DSC00415_1.jpg",
+        "name": "Chrysler",
+        "description": "It's the Chrysler Building, what more can you say?",
+        "date": "12/23/2022"
+    },
+    {
+        "file": "DSC00423_1.jpg",
+        "name": "Shadows of Pan-Am",
+        "description": "The Met-Life Building (previously the Pan-Am building)",
+        "date": "12/23/2022"
+    },
+    {
+        "file": "DSC00430_1.jpg",
+        "name": "Quiet in the Chaos",
+        "description": "The NYC Public Library near Bryant Park",
+        "date": "12/29/2022"
+    },
+    {
+        "file": "DSC00474.jpg",
+        "name": "The Greenery",
+        "description": "A shot of the skyline of NYC from Central Park",
+        "date": "12/29/2022"
+    },
+    {
+        "file": "DSC00477.jpg",
+        "name": "No Dialtone",
+        "description": "One of the many payphones in NYC, this one in Central Park",
+        "date": "12/29/2022"
+    },
+    {
+        "file": "DSC00480.jpg",
+        "name": "Go",
+        "description": "A stoplight in Manhattan",
+        "date": "12/29/2022"
+    },
+    {
+        "file": "DSC00596.jpg",
+        "name": "Manhattan",
+        "description": "Manhattan as seen from the Manhattan Bridge",
+        "date": "12/30/2022"
+    },
+    {
+        "file": "DSC00701.jpg",
+        "name": "Brooklyn Bridge",
+        "description": "A view of the Brooklyn Bridge from the NYC Capitol",
+        "date": "1/2/2023"
+    },
+    {
+        "file": "20230718_172739.jpg",
+        "name": "View from the Star",
+        "description": "View from the Mill Mountain Star, Roanoke VA",
+        "date": "7/18/2023"
+    },
+    {
+        "file": "20230808_105722.jpg",
+        "name": "The Big One",
+        "description": "An Emirates A380 at Dulles International Airport",
+        "date": "8/8/2023"
+    },
+    {
+        "file": "DSC_0297.jpg",
+        "name": "The Map",
+        "description": "The old American Airline's map of the world at Luis Munoz Marin Intl. Airport's Terminal D. It has since been removed due to the renovations",
+        "date": "11/14/2019"
+    },
+    {
+        "file": "DSC_0304.jpg",
+        "name": "Gate D9",
+        "description": "Luis Munoz Marin Intl. Airport's gate D9 before renovations. The padded seats were the comfiest in the airport, and it was dead silent. They have since disappeared since the renovations",
+        "date": "11/14/2019"
+    },
+    {
+        "file": "DSC01068.jpg",
+        "name": "Grand Central",
+        "description": "An upward view of the outside clock of Grand Central Station, NYC",
+        "date": "3/11/2023"
+    },
+    {
+        "file": "DSC01400.jpg",
+        "name": "Take Off",
+        "description": "A United A320 departing from Baltimore Washington International Airport",
+        "date": "4/6/2023"
+    },
+    {
+        "file": "DSC01415.jpg",
+        "name": "Finally Landed",
+        "description": "A British Airways 787 arriving at Baltimore Washington International Airport",
+        "date": "4/6/2023"
+    },
+    {
+        "file": "DSC01423.jpg",
+        "name": "Making a Splash",
+        "description": "An American Airlines 737 arriving at Baltimore Washington International Airport",
+        "date": "4/6/2023"
+    },
+    {
+        "file": "DSC01491.jpg",
+        "name": "Gargoyle Cookie",
+        "description": "Cookie, our snowshoe cat in PR, in her gargoyle position overlooking the neighborhood from our balcony",
+        "date": "4/7/2023"
+    },
+    {
+        "file": "DSC01495.jpg",
+        "name": "Cookie getting some Fresh Air",
+        "description": "Cookie, our snowshoe cat in PR, enjoying some fresh air out in the front balcony. It's always been one of her favorite spots",
+        "date": "4/7/2023"
+    },
+    {
+        "file": "DSC01508.jpg",
+        "name": "El Tunel",
+        "description": "A view from the overlook at Guajataca, with the old railroad tunnel visible",
+        "date": "4/8/2023"
+    },
+    {
+        "file": "DSC01521.jpg",
+        "name": "Grass out to the Ocean",
+        "description": "The field before Tres Palmas Inn, Rincon PR, leading to the ocean",
+        "date": "4/8/2023"
+    },
+    {
+        "file": "DSC01663.jpg",
+        "name": "Path to D",
+        "description": "The long walkway to Terminal D at Luis Munoz Marin Intl Airport",
+        "date": "4/10/2023"
+    },
+    {
+        "file": "DSC01680.jpg",
+        "name": "Gate D4",
+        "description": "Luis Munoz Marin Intl. Airport's gate D4 (Probably formally D9) after renovations.",
+        "date": "4/10/2023"
+    },
+    {
+        "file": "DSC01682.jpg",
+        "name": "Gate D2",
+        "description": "Luis Munoz Marin Intl. Airport's new gate D2 after renovations.",
+        "date": "4/10/2023"
+    },
+    {
+        "file": "DSC01737.jpg",
+        "name": "Luis Munoz Marin",
+        "description": "Luis Munoz Marin Intl. Airport as seen from a departing plane. Hasta Luego!",
+        "date": "4/10/2023"
+    },
+    {
+        "file": "DSC01784.jpg",
+        "name": "Sunshine on the Wings",
+        "description": "The sun peeping along the wing of a Southwest 737",
+        "date": "4/10/2023"
+    },
+    {
+        "file": "DSC01890.jpg",
+        "name": "Boat on the Cold Water",
+        "description": "An unknown boat off the shore at Rehoboth, DE. Might've been doing something with the sand",
+        "date": "4/23/2023"
+    },
+    {
+        "file": "DSC01958.jpg",
+        "name": "Boats in the fog",
+        "description": "A few sailboats out in the foggy waters of Boston, MA",
+        "date": "4/30/2023"
+    },
+    {
+        "file": "DSC01983.jpg",
+        "name": "Boston in the fog",
+        "description": "The city of Boston in a thick afternoon fog",
+        "date": "4/30/2023"
+    },
+    {
+        "file": "DSC02031.jpg",
+        "name": "Flowers in the field",
+        "description": "A macro shot of an unknown flower in Hawk Watch, Brandywine Creek State Park, Wilmington, DE",
+        "date": "5/18/2023"
+    },
+    {
+        "file": "DSC02374.jpg",
+        "name": "Doubling Gap",
+        "description": "The rewarding view of a trecherous drive to Doubling Gap Overlook in Central Pensylvania. My little Civic bravely made it.",
+        "date": "5/19/2023"
+    },
+    {
+        "file": "DSC02452.jpg",
+        "name": "George Washington",
+        "description": "George Washington proudly portrayed on a horse, a statue at the Public Garden in Boston, MA",
+        "date": "7/3/2023"
+    },
+    {
+        "file": "DSC02480.jpg",
+        "name": "The Public Garden",
+        "description": "The view on one of the bridges at The Public Garden in Boston, MA",
+        "date": "7/3/2023"
+    },
+    {
+        "file": "DSC02671.jpg",
+        "name": "I90 from the Prudential Center",
+        "description": "A Foggy View up I90, from the Prudential Center, Boston, MA",
+        "date": "7/4/2023"
+    },
+    {
+        "file": "DSC02694.jpg",
+        "name": "Commonwealth Ave. Mall",
+        "description": "The Commonwealth Ave. Mall as seen from the Prudential Center, Boston, MA",
+        "date": "7/4/2023"
+    },
+    {
+        "file": "DSC02724.jpg",
+        "name": "Is it safe to look out the window?",
+        "description": "A hallway in the Prudential Center, with eerily, completely fogged up windows",
+        "date": "7/4/2023"
+    },
+    {
+        "file": "DSC02820.jpg",
+        "name": "Ready to Depart",
+        "description": "A few planes as seen from Baltimore Washington International Airport's observatory",
+        "date": "7/20/2023"
+    },
+    {
+        "file": "DSC02886.jpg",
+        "name": "The Towers",
+        "description": "A few very thin buildings overlooking Central Park, NYC",
+        "date": "7/30/2023"
+    },
+    {
+        "file": "DSC02901.jpg",
+        "name": "Bow Bridge",
+        "description": "The famous Bow Bridge at Central Park, NYC",
+        "date": "7/30/2023"
+    },
+    {
+        "file": "DSC02908.jpg",
+        "name": "San Remo",
+        "description": "The San Remo towering over the trees of Central Park, NYC",
+        "date": "7/30/2023"
+    },
+    {
+        "file": "DSC02942.jpg",
+        "name": "Flowers of the Shakespeare Garden",
+        "description": "One of the flowers of Shakespeare Garden, Central Park, NYC",
+        "date": "7/30/2023"
+    },
+    {
+        "file": "DSC02943.jpg",
+        "name": "More Flowers at Shakespeare Garden",
+        "description": "More flowers at Shakespeare Garden, Central Park, NYC",
+        "date": "7/30/2023"
+    },
+    {
+        "file": "DSC02956.jpg",
+        "name": "Belvedere",
+        "description": "Belvedere Castle in Central Park, NYC. Who put a castle in Central Park anyway?",
+        "date": "7/30/2023"
+    },
+    {
+        "file": "DSC03007.jpg",
+        "name": "Lady Liberty",
+        "description": "The Statue Of Liberty standing triumphantly on her pedastal",
+        "date": "7/30/2023"
+    },
+    {
+        "file": "DSC03039.jpg",
+        "name": "Manhattan from Liberty",
+        "description": "Manhattan as seen from Liberty Island",
+        "date": "7/30/2023"
+    },
+    {
+        "file": "DSC03897.JPG",
+        "name": "The Falls",
+        "description": "For yet another year, Niagara Falls continues to stun the world with her beauty. Taken from the American side.",
+        "date": "1/1/2024"
+    },
+    {
+        "file": "DSC03945.JPG",
+        "name": "On the way",
+        "description": "In the middle of a rural road in Upstate NY, on our way back to Delaware",
+        "date": "1/2/2024"
+    },
+    {
+        "file": "DSC04188.JPG",
+        "name": "Snow Chopo",
+        "description": "A Snowman with Chopo's hat overlooking the field at, you guessed it, Hawk Watch, Brandywine State Park, Wilmington, DE",
+        "date": "2/17/2024"
+    },
+    {
+        "file": "DSC04233.JPG",
+        "name": "Farewell to Snow Chopo",
+        "description": "A far away shot of a now hatless Snow Chopo at Hawk Watch, Brandywine State Park, Wilmington, DE",
+        "date": "2/17/2024"
+    },
+    {
+        "file": "DSC04277.JPG",
+        "name": "Snow Rock",
+        "description": "A macro shot of a snow covered rock at Brandywine State Park, Wilmington DE",
+        "date": "2/17/2024"
+    },
+    {
+        "file": "DSC04312.JPG",
+        "name": "Wide Open Winter Skies",
+        "description": "The crisp blue winter skies with far away clouds at Brandywine State Park, Wilmington DE",
+        "date": "2/17/2024"
+    },
+    {
+        "file": "DSC05317.JPG",
+        "name": "Neon Skylights",
+        "description": "The sun shining through the iconic neon triangles at Marley Station Mall, Glen Burnie MD",
+        "date": "6/16/2024"
+    },
+    {
+        "file": "DSC05696.JPG",
+        "name": "Jordan Pond",
+        "description": "The majestic Jordan Pond as seen from the more arduous south path up to Bubble Rock, Acadia National Park ME",
+        "date": "6/28/2024"
+    },
+    {
+        "file": "DSC05729.JPG",
+        "name": "Eagle Lake",
+        "description": "Eagle lake as seen from Bubble Rock, Acadia National Park ME",
+        "date": "6/28/2024"
+    },
+    {
+        "file": "DSC05885.JPG",
+        "name": "Facing the Fog",
+        "description": "Looking out to the Atlantic Ocean from Peggy's Cove lighthouse, NS ",
+        "date": "7/1/2024"
+    },
+    {
+        "file": "DSC05885.JPG",
+        "name": "Facing the Fog",
+        "description": "Looking out to the Atlantic Ocean from Peggy's Cove lighthouse, NS ",
+        "date": "7/1/2024"
+    },
+    {
+        "file": "DSC06128.JPG",
+        "name": "Cascades",
+        "description": "Overlooking the Montmorency Falls in Quebec City, QC",
+        "date": "7/3/2024"
+    },
+    {
+        "file": "20241020_134537.jpg",
+        "name": "In Search of a Fry",
+        "description": "A seagull looking around the shores of Rehoboth, DE",
+        "date": "10/20/2024"
+    },
+    {
+        "file": "DSC07119.JPG",
+        "name": "Preserved Glorybowers",
+        "description": "One of the many species visible at the US Botanic Gardens in Washington DC",
+        "date": "3/23/2025"
+    },
+    {
+        "file": "DSC07149.JPG",
+        "name": "Do Not Touch!",
+        "description": "One of the carnivorous plants in a small display at the US Botanic Gardens in Washington DC ",
+        "date": "3/23/2025"
+    },
+    {
+        "file": "DSC07257.JPG",
+        "name": "Edge of the Dunes",
+        "description": "The dunes and the beach at Rehoboth, DE on a particularly foggy day",
+        "date": "4/5/2025"
+    },
+    {
+        "file": "DSC07306.JPG",
+        "name": "Walk Away with Me",
+        "description": "An unknown couple disappearing into the fog at Rehoboth, DE",
+        "date": "4/5/2025"
+    },
+    {
+        "file": "DSC07610.JPG",
+        "name": "Final Approach",
+        "description": "A Delta A320 on final approach at Reagan Natl. Airport, taken from Gravelly Point, Arlington VA",
+        "date": "5/15/2025"
+    },
+    {
+        "file": "DSC07827.JPG",
+        "name": "Left Beyond the Wall",
+        "description": "La Perla and The Cementery of Santa Maria Magdalena de Pazzis, just beyond the walls of El Morro, Old San Juan, PR",
+        "date": "6/8/2025"
+    },
+    {
+        "file": "DSC07948.JPG",
+        "name": "Lone House",
+        "description": "A particularly lone house with no visible road amongst the mountains of northern Ponce, PR",
+        "date": "6/14/2025"
+    }
+]
