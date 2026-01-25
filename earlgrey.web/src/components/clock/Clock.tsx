@@ -2,9 +2,8 @@ import { useMemo } from "react";
 import useCurrentTime from "../../hooks/useCurrentTime";
 import useWeather from "../../hooks/useWeather";
 
-export default function Clock({ width, height, suppressDate }: {
-    width?: string,
-    height?: string
+export default function Clock({ clockStyle, suppressDate }: {
+    clockStyle?: React.CSSProperties
     suppressDate?: boolean
 }) {
 
@@ -54,11 +53,11 @@ export default function Clock({ width, height, suppressDate }: {
 
     const hourTicks = Array.from({ length: 12 }).map((_, i) => 180 + (i / 12) * 360)
 
-    return <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: "100%" }}>
+    return <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: "100%", padding: "5%" }}>
 
         <div style={{
-            width: width ?? "50vh", height: height ?? "50vh",
-            border: "2px solid white", borderRadius: "10px", marginBottom: "10px", position: 'relative'
+            border: "2px solid white", borderRadius: "10px", marginBottom: "10px", position: 'relative',
+            ...(clockStyle ?? { width: "50vh", height: "50vh" })
         }}>
 
             {/* 12 O-Clock */}

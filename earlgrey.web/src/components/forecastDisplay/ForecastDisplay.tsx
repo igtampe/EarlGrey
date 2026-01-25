@@ -7,10 +7,11 @@ import WaterDropIcon from '@mui/icons-material/WaterDrop';
 import { ArrowUpward } from "@mui/icons-material";
 
 
-export default function ForecastDisplay({ forecastIconStyle, suppressThirdColumn, suppressSecondColumn }: {
+export default function ForecastDisplay({ forecastIconStyle, suppressThirdColumn, suppressSecondColumn, fontSize }: {
     forecastIconStyle?: React.CSSProperties
     suppressThirdColumn?: boolean,
     suppressSecondColumn?: boolean,
+    fontSize?: string
 }) {
 
     const { data: weather } = useWeather();
@@ -20,24 +21,28 @@ export default function ForecastDisplay({ forecastIconStyle, suppressThirdColumn
             forecast={a} forecastIconStyle={forecastIconStyle}
             suppressThirdColumn={suppressThirdColumn}
             suppressSecondColumn={suppressSecondColumn}
+            fontSize={fontSize ?? "1.5vh"}
         />)}
     </div>
 
 }
 
-function ForecastRow({ forecast, forecastIconStyle, suppressThirdColumn, suppressSecondColumn }: {
+function ForecastRow({ forecast, forecastIconStyle, suppressThirdColumn, suppressSecondColumn, fontSize }: {
     forecast: Forecast,
     forecastIconStyle?: React.CSSProperties,
     suppressThirdColumn?: boolean,
     suppressSecondColumn?: boolean,
+    fontSize: string
 }) {
 
     const { settings } = useSettings();
 
-    return <div style={{ backgroundColor: "#333", borderRadius: "5px", width: "80%" }}>
+    return <div style={{ backgroundColor: "rgba(51,51,51,0.7)", borderRadius: "5px", width: "80%" }}>
         <div style={{ paddingTop: '10px', paddingLeft: "10px" }}>
-            <b>{forecast.name}</b>: {forecast.description}</div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: "20px" }}>
+            <b>{forecast.name}</b>: {forecast.description}
+        </div>
+
+        <div style={{ display: 'flex', alignItems: 'center', gap: "20px", fontSize: fontSize }}>
             <img src={`/all/${forecast.icon}.svg`} style={forecastIconStyle ?? { width: "15%" }} />
             <div>
                 <div style={{ fontSize: "1.2em" }}>
@@ -56,7 +61,7 @@ function ForecastRow({ forecast, forecastIconStyle, suppressThirdColumn, suppres
                 </div>
             </div>
             {!suppressSecondColumn && <>
-                <div style={{ height: "50px", backgroundColor: "white", width: "2px" }} />
+                <div style={{ height: `calc(${fontSize} * 3)`, backgroundColor: "white", width: "2px" }} />
                 <div style={{ display: 'flex', alignItems: 'center' }}>
                     <div style={{ textAlign: 'center', marginRight: "10px" }}>
                         <ArrowUpward style={{ transform: `rotate(${forecast?.wind?.direction}deg)`, scale: "1.2" }} />
@@ -73,7 +78,7 @@ function ForecastRow({ forecast, forecastIconStyle, suppressThirdColumn, suppres
                 </div>
             </>}
             {!suppressThirdColumn && <>
-                <div style={{ height: "50px", backgroundColor: "white", width: "2px" }} />
+                <div style={{ height: `calc(${fontSize} * 3)`, backgroundColor: "white", width: "2px" }} />
                 <div style={{ fontSize: ".8em", display: 'flex', flexDirection: 'column', gap: "5px" }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: "5px" }}>
                         <WaterDropIcon fontSize="small" />

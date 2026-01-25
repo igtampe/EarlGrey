@@ -44,7 +44,7 @@ export default function Calendar() {
                 </div>)}
             </div>
             {weeks.map(w =>
-                <div style={{ flex: 1, display: 'flex' }}>
+                <div style={{ flex: 1, display: 'flex', fontSize: "1.5vh" }}>
                     {w.map(d => <div style={{ flex: "1", border: d?.getDate() === today.getDate() ? "1px solid red" : "1px solid white" }}>
                         {d?.getDate()}
                     </div>)}
