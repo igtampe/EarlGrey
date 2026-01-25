@@ -3,9 +3,13 @@ import RefreshIcon from '@mui/icons-material/Refresh';
 import { useState } from "react";
 import { useSettings } from "../../hooks/useSettings";
 import useWeather from "../../hooks/useWeather";
-import { ViewColumn, Window } from "@mui/icons-material";
+import { Brightness3, Brightness7, ViewColumn, Window } from "@mui/icons-material";
 
-export default function ActionsPanel() {
+export default function ActionsPanel({ dimmer, dimmerOverride, setDimmerOverride }: {
+    dimmer: number
+    dimmerOverride: boolean
+    setDimmerOverride: (val: boolean) => void
+}) {
 
     const [hovered, setHovered] = useState(false)
     const { setSettings, settings } = useSettings();
@@ -31,9 +35,18 @@ export default function ActionsPanel() {
         onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}
         style={{
             position: "absolute", bottom: "10px", right: "10px", padding: "5px", display: 'flex', gap: "10px",
-            opacity: hovered ? "0.8" : "0.3"
+            opacity: hovered ? "0.8" : "0.3", zIndex: 20
         }}
     >
+
+        {dimmer > 0 && <Tooltip title={"Toggle dimmer"}>
+            <IconButton size="small" onClick={() => setDimmerOverride(!dimmerOverride)}>
+                {dimmerOverride
+                    ? <Brightness7 fontSize="small" />
+                    : <Brightness3 fontSize="small" />
+                }
+            </IconButton>
+        </Tooltip>}
 
         <Tooltip title={"Change layout"}>
             <IconButton size="small" onClick={onLayoutChange}>
@@ -54,6 +67,8 @@ export default function ActionsPanel() {
                 <div style={{ fontSize: ".8em" }}>{settings?.units === "imperial" ? "F" : "C"}°</div>
             </IconButton>
         </Tooltip>
+
+        <hr />
 
         <Tooltip title="Refresh data">
             <IconButton size="small" onClick={() => { refresh() }}>
