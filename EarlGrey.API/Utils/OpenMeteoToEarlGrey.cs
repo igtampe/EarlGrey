@@ -85,13 +85,13 @@ namespace EarlGrey.API.Utils {
 
             return new() {
                 FetchedOn = DateTime.Now,
-                LastUpdate = AsUtc(current.Time),
+                LastUpdate = ConvertToUtc(current.Time,response.Timezone),
                 CurrentConditions = new(){
                     FeelsLike=current.ApparentTemperature,
                     Humidity=current.RelativeHumidity2m,
                     Pressure=current.SurfacePressure,
                     Temperature=current.Temperature2m,
-                    Timestamp=AsUtc(current.Time),
+                    Timestamp=ConvertToUtc(current.Time,response.Timezone),
                     Wind=new(){
                         Direction=(current.WindDirection10m + 180) % 360,
                         GustSpeed= current.WindGusts10m,
@@ -102,15 +102,15 @@ namespace EarlGrey.API.Utils {
                 },
                 Forecast = [.. new List<int>([0, 1, 2]).Select(index => new Forecast() {
                     Name= index== 0
-                        ? current.IsDay == 0 && DateTime.Now > AsUtc(daily.Sunset[0])
+                        ? current.IsDay == 0 && DateTime.Now > ConvertToUtc(daily.Sunset[0],response.Timezone)
                             ? "Tonight"
                             : "Today"
                         : index==1
                             ? "Tomorrow"
                             : daily.Time[index].DayOfWeek.ToString(),
 
-                    Sunrise = AsUtc(daily.Sunrise[index]),
-                    Sunset = AsUtc(daily.Sunset[index]),
+                    Sunrise = ConvertToUtc(daily.Sunrise[index],response.Timezone),
+                    Sunset = ConvertToUtc(daily.Sunset[index],response.Timezone),
 
                     ChanceOfRain=daily.PrecipitationProbabilityMax[index],
                     UvIndex = daily.UvIndex[index],

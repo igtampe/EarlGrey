@@ -3,6 +3,8 @@ using OpenMeteo.Common;
 using System.Globalization;
 using System.Text.Json;
 
+using static EarlGrey.API.Utils.Utils;
+
 namespace EarlGrey.API.Services {
     public class OpenMeteoService(double Lattitude, double Longitude) {
 
@@ -15,9 +17,12 @@ namespace EarlGrey.API.Services {
         };
 
         public async Task<OpenMeteoResponse> GetWeatherAsync() {
+
             if (Cache.TryGetValue(CacheKey, out OpenMeteoResponse? cached)) {
                 if(cached != null) return cached;
             }
+
+            Console.WriteLine("Retrieved weather from OpenMeteo at " + DateTime.Now.ToString());
 
         
             var client = new HttpClient();
@@ -31,23 +36,22 @@ namespace EarlGrey.API.Services {
                 $"&current=" +
                     $"temperature_2m,relative_humidity_2m,apparent_temperature,is_day,precipitation,rain,showers," +
                     $"snowfall,weather_code,surface_pressure,wind_speed_10m,wind_direction_10m,wind_gusts_10m" +
-                $"&forecast_days=3"
+                $"&forecast_days=3&timezone=auto"
             );
 
             var weather = JsonSerializer.Deserialize<OpenMeteoResponse>(weatherString, JsonSerializerOptions) 
                 ?? throw new InvalidOperationException("Uh....");
-            
-            var observationTime = DateTimeOffset.Parse(
-                weather.Current.Time + "",
-                CultureInfo.InvariantCulture,
-                DateTimeStyles.AssumeUniversal
-            );
+
+            var observationTime = ConvertToUtc(weather.Current.Time, weather.Timezone);
 
             var interval = TimeSpan.FromSeconds(weather.Current.Interval);
             var wiggleRoom = TimeSpan.FromSeconds(60);
 
             var absoluteExpiration =
                 observationTime + interval + wiggleRoom;
+
+            Console.WriteLine($"Retrieved observations measured at {observationTime.ToLocalTime()} (valid for {interval.TotalMinutes} minutes)");
+            Console.WriteLine($"Caching weather until {absoluteExpiration.ToLocalTime()} (in {Math.Round((absoluteExpiration - DateTimeOffset.Now).TotalMinutes)} minutes)");
 
             Cache.Set(
                 CacheKey,
