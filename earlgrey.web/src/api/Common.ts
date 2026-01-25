@@ -1,4 +1,5 @@
-export const BACKEND_URL = import.meta.env.VITE_BACKEND_URL ?? "http://localhost:5033"
+//export const BACKEND_URL = import.meta.env.VITE_BACKEND_URL ?? "http://localhost:5033"
+export const BACKEND_URL = import.meta.env.VITE_BACKEND_URL ?? "http://localhost:9090"
 export const API_PREFIX = `${BACKEND_URL}/api/`
 
 const ApiResponse = (
