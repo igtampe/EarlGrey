@@ -61,7 +61,7 @@ export default function PhotoPanel({ background, backgrounds, refreshImage }: {
                     </p>
                 </div> : <div style={{ maxWidth: "500px", textAlign: 'center' }}>
 
-                    <img src={`/backgrounds/${background.category}/${background.file}`} style={{ maxWidth: "500px" }} />
+                    <img src={`/backgrounds/${background.category}/${background.file}`} style={{ maxWidth: "500px", width: "100%" }} />
                     <hr />
                     <div style={{ width: "75%", margin: "auto", fontSize: ".8em" }}>
                         {background.description}
