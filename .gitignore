@@ -363,3 +363,4 @@ MigrationBackup/
 FodyWeavers.xsd
 /EarlGrey.API/EARLGREY_LAT.txt
 /EarlGrey.API/EARLGREY_LON.txt
+/docker-compose.yml
