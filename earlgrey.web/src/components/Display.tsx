@@ -117,6 +117,7 @@ export default function Display() {
     useEffect(refreshImage, [minute, anyBGApi.data])
 
     const backgroundPath = `url(${background ? `/backgrounds/${background.category}/${background.file}` : "/defaultbg.jpg"})`
+    const font = "Lato";
 
     switch (settings.layout) {
         case "SQUARE":
@@ -128,7 +129,8 @@ export default function Display() {
                 backgroundImage: backgroundPath,
                 backgroundPosition: background?.crop ?? "center",
                 backgroundSize: "cover",
-                alignItems: 'center', justifyContent: 'center'
+                alignItems: 'center', justifyContent: 'center',
+                fontFamily: font
             }}>
 
                 {dimmer > 0 && !dimmerOverride && <div style={{ position: "absolute", top: '0', left: '0', width: "100%", height: "100vh", backgroundColor: "black", zIndex: "10", opacity: dimmer }} />}
@@ -170,7 +172,8 @@ export default function Display() {
                 flexDirection: 'column',
                 backgroundImage: backgroundPath,
                 backgroundPosition: background?.crop ?? "center",
-                backgroundSize: "cover"
+                backgroundSize: "cover",
+                fontFamily: font
             }}>
 
                 {dimmer > 0 && !dimmerOverride && <div style={{ position: "absolute", top: '0', left: '0', width: "100%", height: "100vh", backgroundColor: "black", zIndex: "10", opacity: dimmer }} />}
@@ -201,7 +204,8 @@ export default function Display() {
                 padding: "10vh 0%", display: "flex",
                 backgroundImage: backgroundPath,
                 backgroundPosition: background?.crop ?? "center",
-                backgroundSize: "cover"
+                backgroundSize: "cover",
+                fontFamily: font
             }}>
 
                 {dimmer > 0 && !dimmerOverride && <div style={{ position: "absolute", top: '0', left: '0', width: "100%", height: "100vh", backgroundColor: "black", zIndex: "10", opacity: dimmer }} />}
