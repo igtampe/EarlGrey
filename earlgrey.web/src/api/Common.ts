@@ -44,57 +44,6 @@ export function Delete<T>(setLoading: (value: boolean) => void, setItem: (value?
     internalFetch(setLoading, setItem, onError, url, "DELETE", body);
 }
 
-export function Upload<T>(
-    setLoading: (value: boolean) => void,
-    setProgress: (value: number) => void,
-    setItem: (val?: T) => void,
-    onError: (val?: any) => void,
-    method: 'POST' | 'PUT',
-    url: string,
-    selectedFile?: File,
-    additionalData?: any
-) {
-
-    if (!selectedFile) {
-        onError(new Error("File not selected"))
-        return;
-    }
-
-    const formData = new FormData();
-    formData.append('file', selectedFile);
-    formData.append('FileName', selectedFile.name);
-    formData.append('FileType', selectedFile.type);
-    if (additionalData) { Object.keys(additionalData).forEach(key => formData.append(key, additionalData[key])) }
-
-    const xhr = new XMLHttpRequest();
-    xhr.open(method, url, true);
-
-    // Track the progress of the upload
-    xhr.upload.onprogress = function (event) {
-        if (event.lengthComputable) {
-            const percentComplete = Math.round((event.loaded / event.total) * 100);
-            setProgress(percentComplete); // Update progress state
-        }
-    };
-
-    xhr.onload = () => {
-        const response = handleXhrResponse(xhr);
-        handleData(response, onError, setLoading, setItem);
-    };
-
-    xhr.onerror = (error) => {
-        onError({ ...error, status: 999 })
-        console.error(error)
-        setLoading(false)
-    };
-
-
-    setProgress(0);
-    setLoading(true)
-    xhr.send(formData);
-
-}
-
 
 function externalFetch<T>(setLoading: (value: boolean) => void, setItem: (value?: T) => void, onError: (value?: any) => void, url: string, method: 'GET' | 'POST' | 'PUT' | 'DELETE', body?: any) {
     setLoading(true)
