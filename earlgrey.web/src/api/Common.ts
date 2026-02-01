@@ -95,24 +95,6 @@ function handleError(response: ApiResponseType, onError: (value?: any) => void, 
     setLoading(false)
 }
 
-const xhrOk = (xhr: XMLHttpRequest) => xhr.status >= 200 && xhr.status < 300;
-
-function handleXhrResponse<T>(request: XMLHttpRequest) {
-    const contentType = request.responseType
-
-    if (contentType === 'blob') {
-        return ApiResponse(request.response, xhrOk(request), request.status)
-    }
-
-    const text = request.responseText;
-
-    try {
-        return ApiResponse(JSON.parse(text) as T, xhrOk(request), request.status)
-    } catch {
-        return ApiResponse(text, xhrOk(request), request.status)
-    }
-}
-
 async function handleResponse<T>(response: Response): Promise<ApiResponseType> {
     const contentType = response.headers.get(CONTENT_TYPE_HEADER)
 
