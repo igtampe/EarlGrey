@@ -23,7 +23,7 @@ export default function Calendar() {
         let d = 1;
         const w = [];
 
-        while (!Number.isNaN(new Date(`${month + 1}/${d}/${year}`).getDay())) {
+        while (new Date(`${month + 1}/${d}/${year}`).getMonth() === month) {
             const weekday = new Date(`${month + 1}/${d++}/${year}`);
 
             if (w.length === 0 || weekday.getDay() === 0) {
